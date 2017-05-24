@@ -7,7 +7,7 @@
 	<key>YZBBSName</key>
 	<string>BigAppOs</string>
 	<key>YZBaseURL</key>
-	<string>http://www.bigappos.org</string>
+	<string>http://localhost/inspirelifebbs</string>
 	<key>YZBasePath</key>
 	<string>api/mobile/iyz_index.php</string>
 	<key>BIGAPPVERSION</key>

@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		138C4AF91D11DE9E002BB1A3 /* jpush-ios-2.1.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 138C4AF61D11DE9E002BB1A3 /* jpush-ios-2.1.6.a */; };
 		1C459F161DA8C22500790FBE /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C459F151DA8C22500790FBE /* SMS_SDK.framework */; };
+		2522B7A41ED4441A004356EC /* jcore-ios-1.1.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2522B7A11ED4441A004356EC /* jcore-ios-1.1.3.a */; };
+		2522B7A51ED4441A004356EC /* jpush-ios-3.0.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2522B7A21ED4441A004356EC /* jpush-ios-3.0.5.a */; };
+		2522B7A71ED44C16004356EC /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2522B7A61ED44C16004356EC /* libresolv.tbd */; };
 		6D017A311BCE4F0800F6FC1A /* (null) in Resources */ = {isa = PBXBuildFile; };
 		6D017A5A1BCE588500F6FC1A /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D017A541BCE588500F6FC1A /* TMCache.m */; };
 		6D017A5B1BCE588500F6FC1A /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D017A571BCE588500F6FC1A /* TMDiskCache.m */; };
@@ -1098,10 +1100,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		138C4AF61D11DE9E002BB1A3 /* jpush-ios-2.1.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.6.a"; sourceTree = "<group>"; };
-		138C4AF71D11DE9E002BB1A3 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		1C459F151DA8C22500790FBE /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
 		24796FEBC543571A108A487B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2522B79A1ED43E26004356EC /* Clan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clan.entitlements; sourceTree = "<group>"; };
+		2522B7A11ED4441A004356EC /* jcore-ios-1.1.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-1.1.3.a"; sourceTree = "<group>"; };
+		2522B7A21ED4441A004356EC /* jpush-ios-3.0.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.0.5.a"; sourceTree = "<group>"; };
+		2522B7A31ED4441A004356EC /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		2522B7A61ED44C16004356EC /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		6D0179F51BCDFD2D00F6FC1A /* WebNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebNaviViewController.h; sourceTree = "<group>"; };
 		6D0179F61BCDFD2D00F6FC1A /* WebNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebNaviViewController.m; sourceTree = "<group>"; };
 		6D017A531BCE588500F6FC1A /* TMCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCache.h; sourceTree = "<group>"; };
@@ -2685,11 +2690,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2522B7A71ED44C16004356EC /* libresolv.tbd in Frameworks */,
 				6D3DF9961AEE31EE00090760 /* CoreTelephony.framework in Frameworks */,
 				6DB7DB5D1BE3A44E00389A8E /* TencentOpenAPI.framework in Frameworks */,
 				6D3DF9961AEE31EE00090760 /* CoreTelephony.framework in Frameworks */,
 				6DB7DB5D1BE3A44E00389A8E /* TencentOpenAPI.framework in Frameworks */,
-				138C4AF91D11DE9E002BB1A3 /* jpush-ios-2.1.6.a in Frameworks */,
+				2522B7A41ED4441A004356EC /* jcore-ios-1.1.3.a in Frameworks */,
 				6D3DF9941AEE31E600090760 /* QuartzCore.framework in Frameworks */,
 				6D3DF9971AEE31FA00090760 /* libicucore.dylib in Frameworks */,
 				6DB7DB611BE3A44E00389A8E /* libWeChatSDK.a in Frameworks */,
@@ -2716,6 +2722,7 @@
 				6DB7DB641BE3A44E00389A8E /* ShareSDK.framework in Frameworks */,
 				6D8ED87F1AE4F2B200D023EC /* libicucore.A.dylib in Frameworks */,
 				6DB7DB621BE3A44E00389A8E /* MOBFoundation.framework in Frameworks */,
+				2522B7A51ED4441A004356EC /* jpush-ios-3.0.5.a in Frameworks */,
 				8AB7CCDA1AA5A6E4007A17E8 /* libxml2.2.dylib in Frameworks */,
 				8AB7CCD81AA5A49D007A17E8 /* AssetsLibrary.framework in Frameworks */,
 			);
@@ -2734,8 +2741,9 @@
 		138C4AF51D11DE9E002BB1A3 /* jpush */ = {
 			isa = PBXGroup;
 			children = (
-				138C4AF61D11DE9E002BB1A3 /* jpush-ios-2.1.6.a */,
-				138C4AF71D11DE9E002BB1A3 /* JPUSHService.h */,
+				2522B7A11ED4441A004356EC /* jcore-ios-1.1.3.a */,
+				2522B7A21ED4441A004356EC /* jpush-ios-3.0.5.a */,
+				2522B7A31ED4441A004356EC /* JPUSHService.h */,
 			);
 			path = jpush;
 			sourceTree = "<group>";
@@ -2743,6 +2751,7 @@
 		3DB707BE3E821E83FB93A447 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2522B7A61ED44C16004356EC /* libresolv.tbd */,
 				6DFD826F1BCD031A00C474E6 /* JavaScriptCore.framework */,
 				6DED550B1B954AE0006FB167 /* libz.dylib */,
 				6DED55091B954AB3006FB167 /* CoreFoundation.framework */,
@@ -4910,6 +4919,7 @@
 		8AB7CC4B1AA00D7D007A17E8 /* Clan */ = {
 			isa = PBXGroup;
 			children = (
+				2522B79A1ED43E26004356EC /* Clan.entitlements */,
 				6DFF6A751C1933FD00310161 /* www1 */,
 				6D0688431BE7083A0004B415 /* dz_nativejs.js */,
 				6DF9A9F51BDA414A00E9CDBE /* ExampleApp.html */,
@@ -5540,6 +5550,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					8AB7CC611AA00D7E007A17E8 = {
@@ -5549,7 +5562,7 @@
 				};
 			};
 			buildConfigurationList = 8AB7CC441AA00D7D007A17E8 /* Build configuration list for PBXProject "Clan" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -6723,7 +6736,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -6758,7 +6771,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -6771,10 +6784,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = Clan/Clan.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6787,7 +6801,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Clan/Clan.pch";
 				INFOPLIST_FILE = Clan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6797,6 +6811,7 @@
 					"$(PROJECT_DIR)/Clan/Vendor/shareSDK/extends/QQSDK",
 					"$(PROJECT_DIR)/Clan/Vendor/shareSDK/extends/WeChatSDK",
 					"$(PROJECT_DIR)/Clan/Vendor/jpush",
+					"$(PROJECT_DIR)/Clan/Vendor/jpush/Lib",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -6817,7 +6832,7 @@
 					"$(inherited)",
 				);
 				PODS_ROOT = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.euyyue.bbs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspirelife.bigapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -6831,10 +6846,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = Clan/Clan.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Euyyue Education Technology Jinan Company Limited (W5Q36C6FJD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6847,7 +6863,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Clan/Clan.pch";
 				INFOPLIST_FILE = Clan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6857,6 +6873,7 @@
 					"$(PROJECT_DIR)/Clan/Vendor/shareSDK/extends/QQSDK",
 					"$(PROJECT_DIR)/Clan/Vendor/shareSDK/extends/WeChatSDK",
 					"$(PROJECT_DIR)/Clan/Vendor/jpush",
+					"$(PROJECT_DIR)/Clan/Vendor/jpush/Lib",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -6877,7 +6894,7 @@
 					"$(inherited)",
 				);
 				PODS_ROOT = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.euyyue.bbs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspirelife.bigapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -6889,7 +6906,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -6909,7 +6926,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 86MNLPUJYP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
